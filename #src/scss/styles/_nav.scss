@@ -1,0 +1,70 @@
+.nav {
+  font-family: 'Proxima Nova', sans-serif;
+  color: #474747;
+  font-size: 16px;
+
+  &__list {
+    list-style: none;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    color: #7a8387;
+    letter-spacing: 1px;
+    
+    margin: 45px 0 25px 0;
+
+    &:nth-child(1) {
+      margin: 0;
+    }
+  }
+
+  &__item {
+    margin-top: 16px;
+    font-size: 16px;
+
+    &-active {
+      color: #3a72c7;
+    }
+    
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #282c34;
+    transition: all  0.3s;
+    
+    &:hover {
+      color: red;
+    }
+  }
+}
+
+.sublist {
+  list-style: none;
+
+  &__item {
+    margin: 10px 0 0 20px;
+
+    &-active {
+      &::before {
+        position: absolute;
+        content: "\2514";
+        color: gray;
+        left: 45px;
+      }
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #474747;
+    transition: 0.3s ease-in-out;
+    
+    &:hover {
+      color: orange;
+    }
+  }
+}

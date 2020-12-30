@@ -1,0 +1,17 @@
+@import "./styles/reset.scss";
+@import "./styles/header";
+@import "./styles/main";
+@import "./styles/sidebar";
+@import "./styles/nav";
+@import "./styles/content";
+@import "./styles/info";
+@import "./styles//burger";
+
+.wrapper {
+  min-height: 100%;
+  display: grid;
+  grid-template: minmax(76px, auto) 1fr / 1fr;
+  grid-template-areas: 
+    "header"
+    "main";
+}
